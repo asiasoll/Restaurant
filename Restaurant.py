@@ -31,11 +31,12 @@ def menu():
              order.append(12.95)
         elif selction == "7":
              order.append(5.95)
-             
-              subtotal = sum(order)
-    total_order = subtotal + (subtotal * salesTax)
-    return total_order
+             subtotal = sum(order)
+             total_order = subtotal + (subtotal * salesTax)
+             return total_order
 
+             
+        
   
 
 
@@ -43,5 +44,6 @@ def menu():
 restaurantgreetin()
 menu()
 print("Your total including tax is: ${:.2f}".format(total))
+
 
 
