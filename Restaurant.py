@@ -32,12 +32,15 @@ def menu():
         elif selction == "7":
              order.append(5.95)
              
-             
+              subtotal = sum(order)
+    total_order = subtotal + (subtotal * salesTax)
+    return total_order
+
   
 
 
 
 restaurantgreetin()
 menu()
-for num in order:
-     print("Your total", order)
+print("Your total including tax is: ${:.2f}".format(total))
+
