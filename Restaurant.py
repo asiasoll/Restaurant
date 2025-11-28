@@ -42,8 +42,9 @@ def menu():
 
 
 restaurantgreetin()
-menu()
-print("Your total including tax is: ${:.2f}".format(total))
+total = menu()
+print("Your total including tax is:",total)
+
 
 
 
