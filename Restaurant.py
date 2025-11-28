@@ -1,5 +1,5 @@
 order = []
-salesTax = 9.75
+salesTax = 9.75/100
 
 def restaurantgreetin():
     print("Boudreaux & Thibodeaux's Restaurant")
@@ -43,4 +43,5 @@ def menu():
 restaurantgreetin()
 menu()
 print("Your total including tax is: ${:.2f}".format(total))
+
 
